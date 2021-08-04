@@ -1,0 +1,77 @@
+.navbar {
+  display:flex;
+
+  height: 9rem;
+  &__logo {
+      width: 20%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    .brand {
+      font-size: 2.55rem;
+      margin-left: 1rem;
+      color: $primary;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+  }
+  &__main {
+      width: 80%;
+    background-color: $primary;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4.5rem;
+    .head {
+      color: white;
+      font-family: $primary-font;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+    .sub {
+      display: flex;
+      .user {
+        height: 3.7rem;
+        width: 3.7rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: $primary-font;
+        background-color: white;
+        color: $primary;
+      }
+      label {
+        position: relative;
+        .search {
+          width: 35.5rem;
+          height: 37.5px;
+          background-color: white;
+          border-radius: 8px;
+          margin-right: 3.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-left: 1.5rem;
+
+          border: none;
+          outline: none;
+        }
+        .submit {
+          font-size: 1.2rem;
+          font-family: $primary-font;
+          font-weight: 500;
+          color: $primary;
+          cursor: pointer;
+          position: absolute;
+          right: 4.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
